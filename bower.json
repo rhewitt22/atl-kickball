@@ -10,7 +10,9 @@
     "angular-resource": "1.2.6",
     "angular-cookies": "1.2.6",
     "angular-sanitize": "1.2.6",
-    "angular-route": "1.2.6"
+    "angular-route": "1.2.6",
+    "underscore": "~1.6.0",
+    "angular-ui-sortable": "~0.12.3"
   },
   "devDependencies": {
     "angular-mocks": "1.2.6",

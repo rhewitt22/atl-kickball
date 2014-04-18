@@ -1,0 +1,45 @@
+<div class="container attendance-container" ng-controller="AttendanceController">
+	<div class="row">
+		<div class="well col-12-xs">
+
+			<div class="well next-game-well clearfix">
+				<h3 class="next-game">Next Game: {{ nearestGame.date | date:'MMMM d, y h:mma'}}</h3>
+			</div>
+
+			<div class="well information-panel">
+				<h5><span class="fa fa-info-circle fa-lg"></span> Re-order the list to create a lineup!</h5>
+			</div>
+
+			<ul ui-sortable ng-model="team">
+				<li class="well {{player.gender}}" ng-repeat="player in team" ng-hide="player.hide">
+					<div class="index">
+						<h3>{{ $index + 1 }}.</h3>
+					</div>
+					<div  class="clearfix">
+						<div class="player-info">
+							<h5 class="player-name">{{ player.firstName }} {{ player.lastName }}</h5><br>
+							<h5 class="player-phone">{{ player.phone }}</h5>
+						</div>
+						<div class="player-remove-button">
+							<button class="btn btn-danger" ng-click="removePlayer($index);">Remove</button>			
+						</div>
+					</div>
+				</li>
+			</ul>
+
+			<div class="well">
+				<form role="form" >
+					<div class="form-group">
+						<input type="text" class="form-control" ng-model="newPlayer.firstName" placeholder="Name..." required>
+						<select name="" id="" class="form-control" ng-model="newPlayer.gender">
+							<option value="Male">Male</option>
+							<option value="Female">Female</option>
+						</select>
+						<div class="btn btn-success  form-control new-player-button" ng-click="addPlayer(newPlayer);">Add Player</div>
+					</div>
+				</form>
+			</div>
+
+		</div>
+	</div>
+</div>

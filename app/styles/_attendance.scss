@@ -1,0 +1,85 @@
+.attendance-container {
+	ul {
+		padding:0;
+
+		li {
+			list-style: none;
+		}
+	}
+	.next-game-well{
+		background-color:#DFF0D8;
+
+		.next-game {
+			text-align:center;
+		}
+	}
+	.remove-player {
+		float:right;
+	}
+	.player-info {
+		float:left;
+
+		h5 {
+			margin:0;
+			padding:0;
+		}
+
+		.player-name {
+			display:inline-block;
+		}
+
+		.player-phone {
+			display:inline-block;
+		}
+	}
+
+	.player-remove-button {
+		float:right;
+	}
+
+	.Male {
+		background-color:#dffbff;
+	}
+
+	.Female {
+		background-color:#ffe1e1;
+	}
+
+	.drag-n-drop {
+		float:left;
+	}
+
+	form {
+		input, select {
+			margin-bottom: 10px;
+		}
+		button {
+			float:right;
+			margin-bottom: 0;
+		}
+	}
+	.well {
+		padding:10px;
+	}
+
+	.information-panel {
+		text-align:center;
+	}
+
+	.index {
+		float:left;
+		
+		h3 {
+			margin:0 10px 0 0;
+		}
+	}
+
+	.new-player-button {
+		padding-bottom:5px;
+	}
+
+	.form-group {
+		margin-bottom:0;
+	}
+}
+

@@ -1,16 +1,18 @@
 'use strict';
 
 angular.module('kickballApp', [
+  'kickballApp.services',
+  'kickballApp.controllers',
   'ngCookies',
   'ngResource',
   'ngSanitize',
-  'ngRoute'
+  'ngRoute',
+  'ui.sortable'
 ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        templateUrl: 'attendance/attendance.html'
       })
       .otherwise({
         redirectTo: '/'
