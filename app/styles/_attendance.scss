@@ -37,12 +37,16 @@
 		float:right;
 	}
 
-	.Male {
+	.male {
 		background-color:#dffbff;
 	}
 
-	.Female {
+	.female {
 		background-color:#ffe1e1;
+	}
+
+	.no-gender {
+		background-color:#fff;
 	}
 
 	.drag-n-drop {
@@ -64,6 +68,7 @@
 
 	.information-panel {
 		text-align:center;
+		background-color:#fff;
 	}
 
 	.index {
@@ -80,6 +85,12 @@
 
 	.form-group {
 		margin-bottom:0;
+	}
+	.ng-valid input[type="text"] {
+		background-color:#d4ffc5;
+	}
+	.has-error input[type="text"] {  
+		background-color:#ffc5c5;
 	}
 }
 

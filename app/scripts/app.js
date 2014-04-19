@@ -7,7 +7,8 @@ angular.module('kickballApp', [
   'ngResource',
   'ngSanitize',
   'ngRoute',
-  'ui.sortable'
+  'ui.sortable',
+  'ui.slider'
 ])
   .config(function ($routeProvider) {
     $routeProvider
