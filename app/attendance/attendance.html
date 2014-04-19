@@ -8,7 +8,8 @@
 
 			<div class="well information-panel">
 				<h5><span class="fa fa-info-circle fa-lg"></span> Drag and drop players to create a lineup!</h5>
-				<button class="btn btn-primary" ng-click="randomLineup()"><span class="fa fa-refresh fa-lg"></span>&nbsp;&nbsp;Random Lineup</button>
+				<button class="btn btn-primary" ng-click="randomLineup()"><span class="fa fa-refresh fa-lg"></span>&nbsp;&nbsp;Random Lineup</button><br>
+				<input type="checkbox" ng-model="refreshTeam"> Reset all players
 			</div>
 
 			<ul ui-sortable ng-model="team">
@@ -36,7 +37,7 @@
 						<input type="text" name="name" class="form-control" ng-model="newPlayer.firstName" placeholder="Name..." ng-minlength="3" required>
 					</div>
 					<!-- Position Slider -->
-					<label for="slider">Add at position: {{ team.length + 1 }}</label>
+					<label for="slider">Add at position: {{ newPlayer.index + 1 }}</label>
 					<div ui-slider min="0" max="{{team.length}}" ng-model="newPlayer.index" name="slider"></div>
 					<!-- Gender input -->
 					<div class="form-group">

@@ -21,10 +21,17 @@ angular.module('kickballApp.controllers')
 
 		$scope.removePlayer = function ( index ) {
 			$scope.team.splice(index ,1);
+			$scope.newPlayer.index = $scope.team.length;
 		};
 
 		$scope.randomLineup = function () {
-			$scope.team = Team.getTeam();
+			if (!$scope.refreshTeam){
+				// Randomize remaining players in the list (those who haven't been removed)
+				$scope.team = $scope.team.sort(function() { return 0.5 - Math.random(); });
+			} else {
+				// Return random list of all players
+				$scope.team = Team.getTeam();
+			}
 		}
 
 	}]);
