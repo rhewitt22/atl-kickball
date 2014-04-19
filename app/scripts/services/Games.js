@@ -23,11 +23,10 @@ angular.module('kickballApp.services')
 				games = getGames(),
 				futureGames = [];
 
-			//Set "now" to 2 hours ago so it doesn't show the next game until we're done
+			//Set "now" to 2 hours ago so it doesn't show the next game until this week's game is over
 			now.setHours(now.getHours() - 2);
-			
-			_.each(games, function(game) {
 
+			_.each(games, function(game) {
 				if (game.date > now) {
 					futureGames.push(game);
 				}
