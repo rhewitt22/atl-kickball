@@ -13,12 +13,9 @@ angular.module('kickballApp.controllers')
 					$scope.team = response;
 				})
 			}
-
-			$scope.newPlayer = {index: $scope.team.length};
 		});
 
 		$scope.nearestGame = Games.getSoonestGame();
-		
 
 		$scope.addPlayer = function ( newPlayer ) {
 			if (!newPlayer.gender) {
@@ -26,6 +23,7 @@ angular.module('kickballApp.controllers')
 			} else {
 				newPlayer.gender = newPlayer.gender.toLowerCase();
 			}
+			$scope.newPlayer = {index: $scope.team.length};
 			$scope.team.splice(newPlayer.index, 0, newPlayer);
 			$scope.newPlayer = {index: $scope.team.length};
 			$scope.ballerForm.$setPristine();

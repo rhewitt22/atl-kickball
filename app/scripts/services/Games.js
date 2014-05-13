@@ -13,7 +13,8 @@ angular.module('kickballApp.services')
 				{id: 4, date: new Date(2014, 3, 13, 15), opponent: 'Big Black Kicks', abbrev: 'BBK', homeScore: 5, awayScore: 5, home: false},
 				{id: 5, date: new Date(2014, 3, 27, 13), opponent: 'Amaze Balls', abbrev: 'AMZ', homeScore: 0, awayScore: 0, home: null},
 				{id: 6, date: new Date(2014, 4, 4, 14), opponent: 'Delivering Divas', abbrev: 'DDS', homeScore: 0, awayScore: 0, home: null},
-				{id: 7, date: new Date(2014, 4, 11, 13), opponent: 'Sunday Sparkle', abbrev: 'SPK', homeScore: 0, awayScore: 0, home: null}
+				{id: 7, date: new Date(2014, 4, 11, 13), opponent: 'Sunday Sparkle', abbrev: 'SPK', homeScore: 0, awayScore: 0, home: null},
+				{id: 8, date: new Date(2014, 4, 18, 13), opponent: 'Free Ballerz', abbrev: 'FBZ', homeScore: 0, awayScore: 0, home: null}
 			];
 		};
 
