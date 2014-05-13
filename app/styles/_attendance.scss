@@ -13,29 +13,38 @@
 			text-align:center;
 		}
 	}
-	.remove-player {
-		float:right;
-	}
-	.player-info {
-		float:left;
 
-		h5 {
-			margin:0;
-			padding:0;
+	.player-well {
+		height:80px;
+
+		.player-info {
+			height:50%;
+	
+			h4 {
+				font-size:16pt;
+				margin:0 0 0 0;
+				padding:0;
+			}
+	
+			.player-name {
+				display:inline-block;
+			}
+	
+			.player-phone {
+				display:inline-block;
+			}
 		}
-
-		.player-name {
-			display:inline-block;
-		}
-
-		.player-phone {
-			display:inline-block;
+		.player-buttons {
+			height:50%;
+			
+			button {
+				height:100%;
+				width:32.5%;
+			}
 		}
 	}
 
-	.player-remove-button {
-		float:right;
-	}
+	
 
 	.male {
 		background-color:#dffbff;
@@ -69,6 +78,10 @@
 	.information-panel {
 		text-align:center;
 		background-color:#fff;
+
+		button {
+			margin:5px;
+		}
 	}
 
 	.index {
@@ -78,7 +91,6 @@
 			margin:0 10px 0 0;
 		}
 	}
-
 	.new-player-button {
 		padding-bottom:5px;
 	}

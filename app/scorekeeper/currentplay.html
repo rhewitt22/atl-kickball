@@ -1,0 +1,75 @@
+<div class="at-bat-state" ng-switch="atBatState">
+
+	<!-- Pitch buttons -->
+	<div class="pitch-buttons" ng-switch-when="pitch">
+		<div class="row">
+			<div class="col-12-xs">
+				<div class="btn-group btn-group-justified">
+					<a class="btn btn-success btn-lg" ng-click="hit();">Hit</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12-xs">
+				<div class="btn-group btn-group-justified">
+					<a class="btn btn-danger btn-lg" ng-click="out();">Out</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12-xs">
+				<div class="btn-group btn-group-justified">
+					<a class="btn btn-primary btn-lg" ng-click="ball();">Ball</a>
+					<a class="btn btn-default btn-lg" ng-click="foul();">Foul</a>
+					<a class="btn btn-danger btn-lg" ng-click="strike();">Strike</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Hit Buttons -->
+	<div class="hit-buttons" ng-switch-when="hit">
+		<div class="row">
+			<div class="col-12-xs">
+				<div class="btn-group btn-group-justified">
+					<a class="btn btn-success btn-lg" ng-click="">Single</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12-xs">
+				<div class="btn-group btn-group-justified">
+					<a class="btn btn-success btn-lg" ng-click="">Double</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12-xs">
+				<div class="btn-group btn-group-justified">
+					<a class="btn btn-success btn-lg" ng-click="">Triple</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12-xs">
+				<div class="btn-group btn-group-justified">
+					<a class="btn btn-success btn-lg" ng-click="">Home Run</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12-xs">
+				<div class="btn-group btn-group-justified">
+					<a class="btn btn-danger btn-lg" ng-click="cancel();">Cancel</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Out Buttons --> 
+	<div class="out-buttons" ng-switch-when="out">
+		
+	</div>
+</div>

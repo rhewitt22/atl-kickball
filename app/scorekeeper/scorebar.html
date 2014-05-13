@@ -1,0 +1,27 @@
+<div class="row score-bar">
+	<div class="col-12-xs">
+		<a href="#/"><strong><span class="fa fa-angle-left fa-2x"></span></strong></a>
+		<!-- Score -->
+		<div class="score-teams">
+			<span class="team-abbrev away-team">{{ game.awayTeam }} </span><span class="away-score">{{game.awayScore}}</span><br>
+			<span class="team-abbrev home-team">{{game.homeTeam}} </span><span class="home-score">{{game.homeScore}}</span><br>
+		</div>
+
+		<!-- Inning & Outs-->
+		<div class="inning-container">
+			<span class="inning">{{ inning.half }} {{ inning.num }}</span>
+			<div class="outs">{{ inning.outs }} out<span ng-show="inning.outs > 1">s</span></div>
+		</div>
+		
+		<!-- Count -->
+		<div class="count-outs">
+			<div class="count">{{ count.balls }} - {{ count.strikes }}</div>
+			<div class="fouls">{{ count.fouls }} foul<span ng-show="count.fouls !== 1">s</span></div>
+		</div>
+
+		<!-- Bases graphic -->
+		<div class="bases" ng-controller="BasesImageController">
+			<img src="{{image}}" alt="">
+		</div>
+	</div>
+</div>

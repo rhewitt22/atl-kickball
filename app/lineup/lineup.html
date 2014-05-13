@@ -1,0 +1,13 @@
+<div class="container-fluid">
+	<a href="#/" class="btn btn-success edit-button" ng-click="setLineup(team);"><span class="fa fa-edit"></span> Edit</a>
+	<table class="table table-condensed">
+		<tbody>
+			<tr class="{{player.gender}}" ng-repeat="player in team">
+				<div class="player.gender">
+					<td>{{ $index + 1 }}</td>
+					<td>{{ player.firstName }} {{ player.lastName }}</td>
+				</div>
+			</tr>
+		</tbody>
+	</table>
+</div>

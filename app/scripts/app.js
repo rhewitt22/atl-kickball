@@ -15,6 +15,13 @@ angular.module('kickballApp', [
       .when('/', {
         templateUrl: 'attendance/attendance.html'
       })
+      .when('/score', {
+        templateUrl: 'scorekeeper/scorekeeper.html'
+      })
+      .when('/lineup', {
+        templateUrl: 'lineup/lineup.html',
+        controller: 'LineupController'
+      })
       .otherwise({
         redirectTo: '/'
       });

@@ -2,6 +2,8 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import 'sass-bootstrap/lib/bootstrap';
 @import '_attendance';
+@import '_scorebar';
+@import '_lineup';
 
 .browsehappy {
     margin: 0.2em 0;

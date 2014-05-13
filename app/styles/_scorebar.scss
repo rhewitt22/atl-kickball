@@ -1,0 +1,44 @@
+.score-bar {
+	border:1px solid black;
+	padding:5px;
+
+	.fa-angle-left {
+		float:left;
+		margin-top:5px;
+	}
+	.score-teams {
+		float:left;
+		margin-left:20px;
+	}
+	.home-score{
+		float:right;
+	}
+	.away-score {
+		float:right;
+	}
+	.inning-container {
+		float:left;
+		margin-left:20px;
+		
+		
+		.inning {
+			
+		}	
+	}
+	.bases {
+		float:right;
+		margin-right:20px;
+	}
+
+	.count-outs {
+		float:right;
+		margin-right:20px;
+
+		.count {
+
+		}
+		.outs {
+
+		}
+	}
+}

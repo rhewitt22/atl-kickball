@@ -7,9 +7,10 @@
 			</div>
 
 			<div class="well information-panel">
-				<h5><span class="fa fa-info-circle fa-lg"></span> Drag and drop players to create a lineup!</h5>
 				<button class="btn btn-primary" ng-click="randomLineup()"><span class="fa fa-refresh fa-lg"></span>&nbsp;&nbsp;Random Lineup</button><br>
+				<a href="#/lineup" class="btn btn-info save-button" ng-click="setLineup(team)"><span class="fa fa-save"></span> Save</a><br>
 				<input type="checkbox" ng-model="refreshTeam"> Reset all players
+				<a href="#/score" class="btn btn-success"></a>
 			</div>
 
 			<ul ui-sortable ng-model="team">
@@ -17,13 +18,15 @@
 					<div class="index">
 						<h3>{{ $index + 1 }}.</h3>
 					</div>
-					<div  class="clearfix">
+					<div  class="clearfix player-well">
 						<div class="player-info">
-							<h5 class="player-name">{{ player.firstName }} {{ player.lastName }}</h5><br>
+							<h4 class="player-name">{{ player.firstName }} {{ player.lastName }}</h4><br>
 							<h5 class="player-phone">{{ player.phone }}</h5>
 						</div>
-						<div class="player-remove-button">
-							<button class="btn btn-danger" ng-click="removePlayer($index);"><span class="fa fa-lg fa-times"></span></button>			
+						<div class="player-buttons clearfix">
+							<button class="btn btn-sm btn-primary" ng-click="moveUp($index);"><span class="fa fa-arrow-up"></span></button>
+							<button class="btn btn-sm btn-danger" ng-click="removePlayer($index);"><span class="fa fa-lg fa-times"></span></button>
+							<button class="btn btn-sm btn-primary" ng-click="moveDown($index);"><span class="fa fa-arrow-down"></span></button>
 						</div>
 					</div>
 				</li>
