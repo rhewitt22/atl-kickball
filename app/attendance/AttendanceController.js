@@ -9,8 +9,8 @@ angular.module('kickballApp.controllers')
 			if (response) {
 				$scope.team = response;
 			} else {
-				Team.getTeam().then(function (response) {
-					$scope.team = response;
+				Team.getFirebase().then(function (response) {
+					$scope.team = response.sort(function() { return 0.5 - Math.random(); }); // Randomize;
 				})
 			}
 		});
