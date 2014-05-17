@@ -8,7 +8,8 @@ angular.module('kickballApp', [
   'ngSanitize',
   'ngRoute',
   'ui.sortable',
-  'ui.slider'
+  'ui.slider',
+  'firebase'
 ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -21,6 +22,10 @@ angular.module('kickballApp', [
       .when('/lineup', {
         templateUrl: 'lineup/lineup.html',
         controller: 'LineupController'
+      })
+      .when('/player/:id', {
+        templateUrl: 'edit/edit.html',
+        controller: 'EditPlayerController'
       })
       .otherwise({
         redirectTo: '/'

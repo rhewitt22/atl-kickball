@@ -10,7 +10,7 @@ angular.module('kickballApp.controllers')
 				$scope.team = response;
 			} else {
 				Team.getFirebase().then(function (response) {
-					$scope.team = response.sort(function() { return 0.5 - Math.random(); }); // Randomize;
+					$scope.team = response.team.sort(function() { return 0.5 - Math.random(); }); // Randomize;
 				})
 			}
 		});
